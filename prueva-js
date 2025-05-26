@@ -1,0 +1,53 @@
+Examen de JavaScript
+Parte Teórica (Responder brevemente)
+¿Cuál es la diferencia entre declarar una variable con var, let y const? ¿En qué situaciones usarías cada una?
+-- declarar un variable var te da la posibilidad de reemplazar o pisar esa variable por otro tipo de valor puede ser un booleano, int o string pero actualmente ya no se utiliza para programar, en su lugar se utiliza let que hace  lo mismo que el var, en cambio const se utiliza para variables que no se pueden reemplazar. el var lo podria utilizar, para nombrar una variable que cuente los segundos por ejenmplo ya que va cambiando a medida que avanza el tiempo, let lo podria usar para lo mismo o ponerle un booleano. const lo usaria para nombrar el nombre de una persona por ejemplo o el dni ya que eso no cambia 
+
+¿Qué diferencias hay entre for, forEach, map y filter? Explicá brevemente el uso de cada uno.
+
+-- la funcionn map recorre los valores del array original y los modifica para hacer lo que le pidamos por ejemplo sumarle uno a todas los valores, todos los valores deben ser numericos en este caso. la funcion filter funciona solo para filtrar arreglos que cumplan con ciertas condiciones como por ejemplo los numero mayores a 5.la funcion forEach retorna el arreglo y a diferencia del map este no crea un nuevo arreglo con los resultados y el for recorre el arreglo sin hacer nada   
+
+
+¿Cómo se accede a una propiedad de un objeto? Mostrá un ejemplo.
+para acceder a una propiedad de un objeto se puede hacer
+
+const persona = {
+  nombre: 'Leonardo',
+}
+
+console.log(persona['nombre']);
+esto inprimira el valor que se encuntre en el apartado nombre
+
+
+Parte Práctica (Resolver con código JavaScript)
+Ejercicio 1: Arreglos y condicionales
+Dado el siguiente arreglo de números:
+
+const numeros = [3, 7, 2, 9, 12, 5, 8];
+
+a) Recorrer el arreglo y mostrar en consola solamente los números mayores a 5.
+
+
+b) Crear un nuevo arreglo que contenga solamente los números pares.
+
+
+
+Ejercicio 2: Objetos y métodos de arreglo
+Dado el siguiente arreglo de objetos que representan estudiantes:
+
+const estudiantes = [
+  { nombre: "Ana", nota: 8 },
+  { nombre: "Juan", nota: 5 },
+  { nombre: "Lucía", nota: 9 },
+  { nombre: "Pedro", nota: 4 }];
+
+a) Crear un nuevo arreglo que contenga solo los nombres de los estudiantes.
+
+
+b) Obtener los estudiantes que aprobaron (nota mayor o igual a 6).
+
+
+c) Mostrar por consola el nombre y si está "Aprobado" o "Desaprobado".
+
+
+
